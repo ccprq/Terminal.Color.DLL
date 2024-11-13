@@ -1,0 +1,25 @@
+{
+  "name": "fsoc",
+  "displayName": ".fsoc",
+  "description": "fsoc",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.95.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "fsoc",
+      "aliases": ["fsoc", "fsoc"],
+      "extensions": [".fsoc"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "fsoc",
+      "scopeName": "source.fsoc",
+      "path": "./syntaxes/fsoc.tmLanguage.json"
+    }]
+  }
+}

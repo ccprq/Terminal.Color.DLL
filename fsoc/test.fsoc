@@ -1,0 +1,45 @@
+baslik:"test.fsoc";
+
+d[yazi] *pfs:"Merhaba, Dunya";
+
+d[sayi] *asd:10 + 10;
+
+don:*asd < 20:++:0{
+	yaz:*asd;
+}0;
+
+eger:*asd == *asd:1{
+	yaz:"Merhaba";
+}1;
+
+yeger:*asd != *asd:2{
+	yaz:"Merhaba";
+}2;
+
+yoksa:*asd == 1:3{
+	yaz:"Merhaba";
+}3;
+
+surekli:1 != 0:4{
+	dur;
+}4;
+
+bak:*pfs:5{
+	deger:"Merhaba" -> 5:0{
+		yaz:"Merhaba";
+	}5:0;
+	deger:"Merhaba, Dunya" -> 5:1{
+		yaz:*pfs;
+	}5:1;
+5};
+
+islev -> [yazi] yazdir:d[yazi] *value, d[yazi] *v2:6{
+	yaz:"*value ${*v2}";
+	dondur:*value;
+}6;
+
+yazdir:*pfs, *pfs;
+
+d[yazi][] *dize;
+d[sayi][] *sayidize;
+
